@@ -1,0 +1,14 @@
+---
+- name: Nginx
+  hosts: webservers
+  become: true
+  strategy: linear
+  roles:
+    - web_nginx
+
+- name: Nginx
+  hosts: balance
+  become: true
+  strategy: linear
+  roles:
+    - haproxy

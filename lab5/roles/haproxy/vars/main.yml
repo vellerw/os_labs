@@ -1,0 +1,3 @@
+---
+keepalived_ip_nonlocal_bind: 2
+nginx_listen_port: 8080
